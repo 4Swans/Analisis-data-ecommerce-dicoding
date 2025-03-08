@@ -5,11 +5,11 @@ import seaborn as sns
 
 # Load dataset
 def load_data():
-    order_items_df = pd.read_csv("./order_items.csv")
-    products_df = pd.read_csv("./products.csv")
-    category_translation_df = pd.read_csv("./category.csv")
-    order_payments_df = pd.read_csv("./payments.csv")
-    orders_df = pd.read_csv("./orders.csv")
+    order_items_df = pd.read_csv("./Dashboard/order_items.csv")
+    products_df = pd.read_csv("./Dashboard/products.csv")
+    category_translation_df = pd.read_csv("./Dashboard/category.csv")
+    order_payments_df = pd.read_csv("./Dashboard/payments.csv")
+    orders_df = pd.read_csv("./Dashboard/orders.csv")
     
     # Convert order_purchase_timestamp to datetime
     orders_df["order_purchase_timestamp"] = pd.to_datetime(orders_df["order_purchase_timestamp"])
